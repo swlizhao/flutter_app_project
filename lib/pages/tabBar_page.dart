@@ -69,7 +69,7 @@ class _CustomTabBarViewControllerPageState
         body: PageView(
           controller: this._pageController,
           children: this._pageList,
-          // pageSnapping: false,
+          physics: NeverScrollableScrollPhysics(),//禁止pageView滑动
         ),
         bottomNavigationBar: BottomNavigationBar(
           onTap: (int index) {
@@ -82,8 +82,8 @@ class _CustomTabBarViewControllerPageState
           backgroundColor: Colors.white, //bottombar 背景颜色
           iconSize: 20, //icon大小
           unselectedItemColor: Colors.black38, //未选中颜色
-          selectedItemColor: Colors.blue,
-          type: BottomNavigationBarType.fixed, //选中颜色
+          selectedItemColor: Colors.blue,//选中颜色
+          type: BottomNavigationBarType.fixed, 
           items: this._bottomNavBarItemList,
         ));
   }

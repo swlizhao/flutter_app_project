@@ -14,6 +14,7 @@ class _ShoppingCartControllerPageState extends State<ShoppingCartControllerPage>
       appBar: AppBar(
         title:Text("购物车"),
       ),
+      
     );
   }
 }

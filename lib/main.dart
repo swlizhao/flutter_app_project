@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'pages/tabBar_page.dart';
+import 'router/router.dart';
 
-void main() => runApp(MyApp());
+// ColorFiltered界面变灰  BlendMode.color 变灰
+void main() => runApp(ColorFiltered(
+      colorFilter: ColorFilter.mode(Colors.white, BlendMode.dstATop),
+      child: MyApp(),
+    ));
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -9,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/', //初始化路由
+      onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.red,
       ),
-      home: CustomTabBarViewControllerPage(),
     );
   }
 }
-
