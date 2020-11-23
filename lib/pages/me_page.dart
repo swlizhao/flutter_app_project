@@ -103,6 +103,7 @@ class _MeControllerPageState extends State<MeControllerPage> {
           _walletWidget(),
           _otherWidget(),
           // 其它视图
+          //Flutter 是一套统一安卓、苹果的框架
         ],
       )),
     );
