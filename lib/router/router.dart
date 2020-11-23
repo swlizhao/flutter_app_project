@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import '../pages/tabBar_page.dart';
 // import '../pages/productDetail_page.dart';
@@ -21,9 +19,11 @@ import '../pages/loginPages/registerFirst_page.dart';
 import '../pages/loginPages/registerSecond_page.dart';
 import '../pages/loginPages/registerThree_page.dart';
 import '../pages/loginPages/forgotFirst_page.dart';
+import '../pages/userInfo_page.dart';
+
 //配置路由
 final routes = {
-  '/':(context,{arguments}) => CustomTabBarViewControllerPage(), //跟路由
+  '/': (context, {arguments}) => CustomTabBarViewControllerPage(), //跟路由
   // '/search':(context,{arguments}) => SearchPage(),
   // '/productDetail':(context,{arguments}) => ProductDetailPage(arguments:arguments), //商品信息
   // '/productList':(context,{arguments}) => ProductListViewControllerPage(arguments:arguments),
@@ -34,15 +34,16 @@ final routes = {
   // '/payPage':(context,{arguments}) => PayPage(arguments:arguments),
   //  '/myOrderPage':(context,{arguments}) => MyOrderPage(arguments:arguments),
   // '/orderInfoPage':(context,{arguments}) => OrderInfoPage(arguments:arguments),
-   '/setPage':(context,{arguments}) => SetPage(),
-   '/addressListPage':(context,{arguments}) => AddressListPage(),
-   '/addAddressPage':(context,{arguments}) => AddAddressPage(),    
-   '/orderListPage':(context,{arguments}) => OrderListPage(),
-   '/loginPage':(context,{arguments}) => LoginPage(),
-   '/registerFirstPage':(context,{arguments}) => RegisterFirstPage(),
-   '/registerSecondPage':(context,{arguments}) => RegisterSecondPage(),
-   '/registerThreePage':(context,{arguments}) => RegisterThreePage(),
-   '/forgotFirstPage':(context,{arguments}) => ForgotFirstPage(),
+  '/setPage': (context, {arguments}) => SetPage(),
+  '/addressListPage': (context, {arguments}) => AddressListPage(),
+  '/addAddressPage': (context, {arguments}) => AddAddressPage(),
+  '/orderListPage': (context, {arguments}) => OrderListPage(),
+  '/loginPage': (context, {arguments}) => LoginPage(),
+  '/registerFirstPage': (context, {arguments}) => RegisterFirstPage(),
+  '/registerSecondPage': (context, {arguments}) => RegisterSecondPage(),
+  '/registerThreePage': (context, {arguments}) => RegisterThreePage(),
+  '/forgotFirstPage': (context, {arguments}) => ForgotFirstPage(),
+  '/userInfoPage': (context, {arguments}) => UserInfoPage(),
 };
 
 //固定写法

@@ -13,7 +13,7 @@ class _ForgotFirstPageState extends State<ForgotFirstPage> {
     return Container(
        child: Scaffold(
          appBar:AppBar(
-           title:Text("忘记密码"),
+           title:Text("重置密码"),
          ),
        ),
     );

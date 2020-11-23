@@ -20,15 +20,32 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/registerFirstPage');
                 },
-                child: Text("注册",style: TextStyle(color:Colors.white),)
-                ),
-                 FlatButton(
+                child: Text(
+                  "注册",
+                  style: TextStyle(color: Colors.white),
+                )),
+            FlatButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/forgotFirstPage');
                 },
-                child: Text("忘记密码",style: TextStyle(color:Colors.white),)
-                ),
+                child: Text(
+                  "忘记密码",
+                  style: TextStyle(color: Colors.white),
+                )),
           ],
+        ),
+        body: Container(
+          child: Stack(
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.red,
+                child: TextField(),
+              ),
+              Positioned(child: Text("评级")),
+            ],
+          ),
         ),
       ),
     );
